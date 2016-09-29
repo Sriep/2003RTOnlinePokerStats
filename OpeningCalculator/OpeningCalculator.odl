@@ -1,0 +1,42 @@
+// OpeningCalculator.odl : type library source for OpeningCalculator.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (OpeningCalculator.tlb).
+
+[ uuid(78FD618C-EBA1-424C-8CA7-F3644DD97CA8), version(1.0) ]
+library OpeningCalculator
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for COpeningCalculatorDoc
+	
+	[ uuid(C2131AA2-BEBF-4670-A88F-614D522D75ED) ]
+	dispinterface IOpeningCalculator
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(COpeningCalculatorDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(COpeningCalculatorDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for COpeningCalculatorDoc
+	
+	[ uuid(24999D88-D6BF-40CB-8592-134B45B2EA54) ]
+	coclass OpeningCalculator
+	{
+		[default] dispinterface IOpeningCalculator;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

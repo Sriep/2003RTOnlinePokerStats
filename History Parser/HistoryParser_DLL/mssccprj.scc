@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[HistoryParser_DLL.dsp]
+SCC_Aux_Path = "C:\Projects\VSS"
+SCC_Project_Name = "$/History Parser/HistoryParser_DLL", BBBAAAAA

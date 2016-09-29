@@ -1,0 +1,1 @@
+select [Action Id], [Hand reference], [Action], [Round], [Action], [Player id], [Nick] from [ActionsView] order by [Action id]

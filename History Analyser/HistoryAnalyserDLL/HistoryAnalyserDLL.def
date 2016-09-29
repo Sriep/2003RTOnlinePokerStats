@@ -1,0 +1,11 @@
+; HistoryAnalyserDLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "HistoryAnalyserDLL"
+DESCRIPTION  'HistoryAnalyserDLL Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	DoModelGenericHystoryAnalyserDialog
+	DoModelHistoryAnalyserDialog
+	IsTableWindowForAnalyser
+	RefershHistoryAnalyser

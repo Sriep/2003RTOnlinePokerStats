@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\OpeningCalculator.Application = OpeningCalculator Application
+HKEY_CLASSES_ROOT\OpeningCalculator.Application\CLSID = {24999D88-D6BF-40CB-8592-134B45B2EA54}
+
+HKEY_CLASSES_ROOT\CLSID\{24999D88-D6BF-40CB-8592-134B45B2EA54} = OpeningCalculator Application
+HKEY_CLASSES_ROOT\CLSID\{24999D88-D6BF-40CB-8592-134B45B2EA54}\ProgId = OpeningCalculator.Application
+HKEY_CLASSES_ROOT\CLSID\{24999D88-D6BF-40CB-8592-134B45B2EA54}\LocalServer32 = OPENINGCALCULATOR.EXE

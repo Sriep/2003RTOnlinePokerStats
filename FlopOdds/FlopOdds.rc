@@ -1,0 +1,636 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FlopOdds.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FlopOdds.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About FlopOdds"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FlopOdds Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FLOPODDS_DIALOG DIALOGEX 0, 0, 436, 316
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FlopOdds"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,76,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,138,28,50,14
+    COMBOBOX        IDC_FLOP1_RANK,19,49,48,129,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FLOP2_RANK,77,49,48,139,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FLOP3_RANK,140,49,48,141,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FLOP1_SUIT,19,68,48,74,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FLOP3_SUIT,140,68,48,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_FLOP2_SUIT,77,68,48,58,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Hand Selector",IDC_B_HANDS_SELECTOR,19,28,50,14
+    CONTROL         "Lst of HAnd Spreads",IDC_FO_GRID_SPREADLIST,"MFCGridCtrl",
+                    WS_TABSTOP,285,17,132,281
+    PUSHBUTTON      "Calculate",IDC_FO_B_CALCULATE,197,28,50,14
+    CONTROL         "Results",IDC_FO_GRID_FLOPSTATS,"MFCGridCtrl",WS_TABSTOP,
+                    17,92,244,202
+    PUSHBUTTON      "Hand EV Dialog",IDC_TOHANDEV_DLG,20,7,59,14
+END
+
+IDD_HAND_SELECTION DIALOG DISCARDABLE  0, 0, 764, 289
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hand Selection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",IDC_STATIC,21,29,34,8
+    EDITTEXT        IDC_HS_NAME,61,28,122,14,ES_AUTOHSCROLL
+    CONTROL         "AA",IDC_HS_CB_AA,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    22,49,25,10
+    CONTROL         "KK",IDC_HS_CB_KK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    21,64,25,10
+    CONTROL         "QQ",IDC_HS_CB_QQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    21,81,27,10
+    CONTROL         "JJ",IDC_HS_CB_JJ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    21,98,27,10
+    CONTROL         "TT",IDC_HS_CB_TT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    21,113,28,10
+    CONTROL         "99",IDC_HS_CB_99,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    20,131,25,10
+    CONTROL         "88",IDC_HS_CB_88,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    20,147,26,10
+    CONTROL         "77",IDC_HS_CB_77,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    19,168,25,10
+    CONTROL         "66",IDC_HS_CB_66,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    19,187,26,10
+    CONTROL         "55",IDC_HS_CB_55,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    19,205,28,10
+    CONTROL         "44",IDC_HS_CB_44,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    19,223,24,10
+    CONTROL         "33",IDC_HS_CB_33,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    17,238,24,10
+    CONTROL         "22",IDC_HS_CB_22,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    15,254,23,10
+    CONTROL         "AKs",IDC_HS_CB_AKS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,64,29,10
+    CONTROL         "AQs",IDC_HS_CB_AQS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,81,29,10
+    CONTROL         "AJs",IDC_HS_CB_AJS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,98,27,10
+    CONTROL         "ATs",IDC_HS_CB_ATS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,51,113,28,10
+    CONTROL         "A9s",IDC_HS_CB_A9S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,50,131,25,10
+    CONTROL         "A8s",IDC_HS_CB_A8S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,48,148,26,10
+    CONTROL         "A7s",IDC_HS_CB_A7S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,48,166,25,10
+    CONTROL         "A6s",IDC_HS_CB_A6S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,47,186,26,10
+    CONTROL         "A5s",IDC_HS_CB_A5S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,48,205,28,10
+    CONTROL         "A4s",IDC_HS_CB_A4S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,47,223,24,10
+    CONTROL         "A3s",IDC_HS_CB_A3S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,47,239,23,10
+    CONTROL         "A2s",IDC_HS_CB_A2S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,46,254,22,10
+    CONTROL         "KQs",IDC_HS_CB_KQS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,81,29,10
+    CONTROL         "KJs",IDC_HS_CB_KJS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,98,27,10
+    CONTROL         "KTs",IDC_HS_CB_KTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,82,113,28,10
+    CONTROL         "K9s",IDC_HS_CB_K9S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,131,25,10
+    CONTROL         "K8s",IDC_HS_CB_K8S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,147,26,10
+    CONTROL         "K7s",IDC_HS_CB_K7S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,168,25,10
+    CONTROL         "K6s",IDC_HS_CB_K6S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,80,187,26,10
+    CONTROL         "K5s",IDC_HS_CB_K5S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,79,205,28,10
+    CONTROL         "K4s",IDC_HS_CB_K4S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,78,223,30,10
+    CONTROL         "K3s",IDC_HS_CB_K3S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,78,238,23,10
+    CONTROL         "K2s",IDC_HS_CB_K2S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,77,254,28,10
+    CONTROL         "QJs",IDC_HS_CB_QJS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,111,99,27,10
+    CONTROL         "QTs",IDC_HS_CB_QTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,110,114,28,10
+    CONTROL         "Q9s",IDC_HS_CB_Q9S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,109,132,25,10
+    CONTROL         "Q8s",IDC_HS_CB_Q8S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,109,148,26,10
+    CONTROL         "Q7s",IDC_HS_CB_Q7S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,109,169,25,10
+    CONTROL         "Q6s",IDC_HS_CB_Q6S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,108,188,26,10
+    CONTROL         "Q5s",IDC_HS_CB_Q5S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,206,28,10
+    CONTROL         "Q4s",IDC_HS_CB_Q4S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,108,225,29,10
+    CONTROL         "Q3s",IDC_HS_CB_Q3S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,239,29,10
+    CONTROL         "Q2s",IDC_HS_CB_Q2S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,255,29,10
+    CONTROL         "JTs",IDC_HS_CB_JTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,139,115,28,10
+    CONTROL         "J9s",IDC_HS_CB_J9S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,133,25,10
+    CONTROL         "J8s",IDC_HS_CB_J8S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,149,26,10
+    CONTROL         "J7s",IDC_HS_CB_J7S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,170,25,10
+    CONTROL         "J6s",IDC_HS_CB_J6S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,189,26,10
+    CONTROL         "J5s",IDC_HS_CB_J5s,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,136,207,28,10
+    CONTROL         "J4s",IDC_HS_CB_J4S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,137,226,24,10
+    CONTROL         "J3s",IDC_HS_CB_J3S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,136,241,27,10
+    CONTROL         "J2s",IDC_HS_CB_J2S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,136,258,27,10
+    CONTROL         "T9s",IDC_HS_CB_T9S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,164,132,25,10
+    CONTROL         "T8s",IDC_HS_CB_T8S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,164,148,26,10
+    CONTROL         "T7s",IDC_HS_CB_T7S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,169,25,10
+    CONTROL         "T6s",IDC_HS_CB_T6S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,188,26,10
+    CONTROL         "T5s",IDC_HS_CB_T5S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,206,25,10
+    CONTROL         "T4s",IDC_HS_CB_T4S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,223,26,10
+    CONTROL         "T3s",IDC_HS_CB_T3S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,239,28,10
+    CONTROL         "T2s",IDC_HS_CB_T2S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,163,258,28,10
+    CONTROL         "98s",IDC_HS_CB_98S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,147,26,10
+    CONTROL         "97s",IDC_HS_CB_97S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,168,25,10
+    CONTROL         "96s",IDC_HS_CB_96S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,187,26,10
+    CONTROL         "95s",IDC_HS_CB_95S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,192,205,28,10
+    CONTROL         "94s",IDC_HS_CB_94S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,194,223,30,10
+    CONTROL         "93s",IDC_HS_CB_93S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,194,238,28,10
+    CONTROL         "92s",IDC_HS_CB_92S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,193,254,27,10
+    CONTROL         "87s",IDC_HS_CB_87S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,223,169,25,10
+    CONTROL         "86s",IDC_HS_CB_86S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,223,188,26,10
+    CONTROL         "85s",IDC_HS_CB_85S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,224,206,28,10
+    CONTROL         "84s",IDC_HS_CB_84S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,223,223,30,10
+    CONTROL         "83s",IDC_HS_CB_83S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,224,239,28,10
+    CONTROL         "82s",IDC_HS_CB_82s,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,224,255,27,10
+    CONTROL         "76s",IDC_HS_CB_76S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,253,190,26,10
+    CONTROL         "75s",IDC_HS_CB_75S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,253,208,28,10
+    CONTROL         "74s",IDC_HS_CB_74S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,253,226,30,10
+    CONTROL         "73s",IDC_HS_CB_73S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,253,242,28,10
+    CONTROL         "72s",IDC_HS_CB_72S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,254,257,27,10
+    CONTROL         "65s",IDC_HS_CB_65S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,281,208,28,10
+    CONTROL         "64s",IDC_HS_CB_64S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,284,226,30,10
+    CONTROL         "63s",IDC_HS_CB_63S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,285,242,28,10
+    CONTROL         "62s",IDC_HS_CB_62S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,285,257,27,10
+    CONTROL         "54s",IDC_HS_CB_54S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,313,223,30,10
+    CONTROL         "53s",IDC_HS_CB_53S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,314,239,28,10
+    CONTROL         "52s",IDC_HS_CB_52S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,316,254,27,10
+    CONTROL         "43s",IDC_HS_CB_43S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,342,239,28,10
+    CONTROL         "42s",IDC_HS_CB_42S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,343,255,27,10
+    CONTROL         "32s",IDC_HS_CB_32S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,372,255,25,10
+    CONTROL         "AK",IDC_HS_CB_AK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    408,65,25,10
+    CONTROL         "AQ",IDC_HS_CB_AQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    408,83,26,10
+    CONTROL         "AJ",IDC_HS_CB_AJ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    408,99,27,10
+    CONTROL         "AT",IDC_HS_CB_AT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    407,115,28,10
+    CONTROL         "A9",IDC_HS_CB_A9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    406,132,25,10
+    CONTROL         "A8",IDC_HS_CB_A8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    404,149,26,10
+    CONTROL         "A7",IDC_HS_CB_A7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    404,168,25,10
+    CONTROL         "A6",IDC_HS_CB_A6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    403,187,26,10
+    CONTROL         "A5",IDC_HS_CB_A5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    404,206,28,10
+    CONTROL         "A4",IDC_HS_CB_A4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    404,224,24,10
+    CONTROL         "A3",IDC_HS_CB_A3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    403,240,23,10
+    CONTROL         "K3",IDC_HS_CB_K3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    434,240,23,10
+    CONTROL         "K2",IDC_HS_CB_K2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    433,255,25,10
+    CONTROL         "KQ",IDC_HS_CB_KQ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    438,83,26,10
+    CONTROL         "KJ",IDC_HS_CB_KJ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    438,99,27,10
+    CONTROL         "KT",IDC_HS_CB_KT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    438,115,28,10
+    CONTROL         "K9",IDC_HS_CB_K9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    437,132,25,10
+    CONTROL         "K8",IDC_HS_CB_K8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    437,148,26,10
+    CONTROL         "K7",IDC_HS_CB_K7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    436,169,25,10
+    CONTROL         "K6",IDC_HS_CB_K6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    436,188,26,10
+    CONTROL         "K5",IDC_HS_CB_K5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    435,206,28,10
+    CONTROL         "K4",IDC_HS_CB_K4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    434,224,30,10
+    CONTROL         "Q4",IDC_HS_CB_Q4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    464,227,25,10
+    CONTROL         "Q3",IDC_HS_CB_Q3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    463,240,25,10
+    CONTROL         "Q2",IDC_HS_CB_Q2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    463,256,25,10
+    CONTROL         "QJ",IDC_HS_CB_QJ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    467,100,27,10
+    CONTROL         "QT",IDC_HS_CB_QT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    466,115,28,10
+    CONTROL         "Q9",IDC_HS_CB_Q9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    465,133,25,10
+    CONTROL         "Q8",IDC_HS_CB_Q8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    465,149,26,10
+    CONTROL         "Q7",IDC_HS_CB_Q7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    465,171,25,10
+    CONTROL         "Q6",IDC_HS_CB_Q6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    464,189,26,10
+    CONTROL         "Q5",IDC_HS_CB_Q5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    463,207,28,10
+    CONTROL         "J4",IDC_HS_CB_J4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    493,227,24,10
+    CONTROL         "J3",IDC_HS_CB_J3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    492,243,23,10
+    CONTROL         "J2",IDC_HS_CB_J2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    492,259,23,10
+    CONTROL         "JT",IDC_HS_CB_JT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    495,116,28,10
+    CONTROL         "J9",IDC_HS_CB_J9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    493,134,25,10
+    CONTROL         "J8",IDC_HS_CB_J8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    493,150,26,10
+    CONTROL         "J7",IDC_HS_CB_J7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    493,171,25,10
+    CONTROL         "J6",IDC_HS_CB_J6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    493,190,26,10
+    CONTROL         "J5",IDC_HS_CB_J5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    492,208,28,10
+    CONTROL         "T2",IDC_HS_CB_T2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    519,259,25,10
+    CONTROL         "T9",IDC_HS_CB_T9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    520,133,25,10
+    CONTROL         "T8",IDC_HS_CB_T8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    520,149,26,10
+    CONTROL         "T7",IDC_HS_CB_T7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    519,171,25,10
+    CONTROL         "T6",IDC_HS_CB_T6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    519,189,26,10
+    CONTROL         "T5",IDC_HS_CB_T5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    519,207,25,10
+    CONTROL         "T4",IDC_HS_CB_T4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    519,224,26,10
+    CONTROL         "T3",IDC_HS_CB_T3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    519,240,28,10
+    CONTROL         "A2",IDC_HS_CB_A2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    402,255,22,10
+    CONTROL         "98",IDC_HS_CB_98,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    549,148,26,10
+    CONTROL         "97",IDC_HS_CB_97,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    549,169,25,10
+    CONTROL         "96",IDC_HS_CB_96,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    549,188,26,10
+    CONTROL         "95",IDC_HS_CB_95,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    548,206,28,10
+    CONTROL         "94",IDC_HS_CB_94,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    550,224,30,10
+    CONTROL         "93",IDC_HS_CB_93,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    550,239,28,10
+    CONTROL         "92",IDC_HS_CB_92,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    549,255,27,10
+    CONTROL         "87",IDC_HS_CB_87,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    579,171,25,10
+    CONTROL         "86",IDC_HS_CB_86,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    579,189,26,10
+    CONTROL         "85",IDC_HS_CB_85,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    579,207,28,10
+    CONTROL         "84",IDC_HS_CB_84,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    579,224,30,10
+    CONTROL         "83",IDC_HS_CB_83,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    580,240,28,10
+    CONTROL         "82",IDC_HS_CB_82,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    580,256,27,10
+    CONTROL         "76",IDC_HS_CB_76,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    609,191,26,10
+    CONTROL         "75",IDC_HS_CB_75,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    609,209,28,10
+    CONTROL         "74",IDC_HS_CB_74,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    609,227,30,10
+    CONTROL         "73",IDC_HS_CB_73,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    609,243,28,10
+    CONTROL         "72",IDC_HS_CB_72,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    610,259,27,10
+    CONTROL         "65",IDC_HS_CB_65,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    637,209,28,10
+    CONTROL         "64",IDC_HS_CB_64,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    640,227,30,10
+    CONTROL         "63",IDC_HS_CB_63,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    641,243,28,10
+    CONTROL         "62",IDC_HS_CB_62,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    642,259,27,10
+    CONTROL         "54",IDC_HS_CB_54,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    669,224,30,10
+    CONTROL         "53",IDC_HS_CB_53,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    670,240,28,10
+    CONTROL         "52",IDC_HS_CB_52,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    672,255,27,10
+    CONTROL         "43",IDC_HS_CB_43,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    698,240,28,10
+    CONTROL         "42",IDC_HS_CB_42,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    699,256,27,10
+    CONTROL         "32",IDC_HS_CB_32,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    728,256,25,10
+    DEFPUSHBUTTON   "OK",IDOK,566,39,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,570,62,50,14
+    PUSHBUTTON      "Save",IDC_HS_SAVE,569,84,50,14
+    PUSHBUTTON      "Read from DB",IDC_DS_READ,571,106,50,14
+    LTEXT           "%",IDC_HS_PERCENTAGE,211,28,29,17
+END
+
+IDD_HAND_EVS DIALOG DISCARDABLE  0, 0, 555, 366
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Evaluate",ID_EVALUATE,473,259,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,472,281,50,14
+    CONTROL         "Selection one",IDC_HANDSEL_1,"MFCGridCtrl",WS_TABSTOP,
+                    22,30,93,130
+    CONTROL         "Selection one",IDC_HANDSEL_2,"MFCGridCtrl",WS_TABSTOP,
+                    131,31,93,130
+    CONTROL         "Selection one",IDC_HANDSEL_3,"MFCGridCtrl",WS_TABSTOP,
+                    235,30,93,130
+    CONTROL         "Selection one",IDC_HANDSEL_4,"MFCGridCtrl",WS_TABSTOP,
+                    338,32,93,130
+    CONTROL         "Selection one",IDC_HANDSEL_5,"MFCGridCtrl",WS_TABSTOP,
+                    20,169,93,130
+    CONTROL         "Selection one",IDC_HANDSEL_6,"MFCGridCtrl",WS_TABSTOP,
+                    133,170,93,130
+    CONTROL         "Selection one",IDC_HANDSEL_7,"MFCGridCtrl",WS_TABSTOP,
+                    239,170,93,130
+    CONTROL         "Selection one",IDC_HANDSEL_8,"MFCGridCtrl",WS_TABSTOP,
+                    341,169,93,130
+    CONTROL         "Selection one",IDC_HANDSEL_0,"MFCGridCtrl",WS_TABSTOP,
+                    441,34,93,130
+    PUSHBUTTON      "Clear",IDC_CLEAR1,31,9,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR2,146,7,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR3,253,7,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR4,349,7,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR5,462,7,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR6,25,306,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR7,143,305,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR8,257,305,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR9,346,305,50,14
+    CONTROL         "Progress1",IDC_EVALC_PROGRESS,"msctls_progress32",
+                    WS_BORDER,32,331,401,14
+    EDITTEXT        IDC_NUM_TESTS,453,192,73,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Num of tests",IDC_STATIC,457,174,65,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FlopOdds MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FlopOdds\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FlopOdds.EXE\0"
+            VALUE "ProductName", "FlopOdds Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FLOPODDS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 309
+    END
+
+    IDD_HAND_SELECTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 757
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_HAND_EVS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 548
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 359
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About FlopOdds..."
+    IDS_SPADES              "Spades"
+    IDS_HEARTS              "Hearts"
+    IDS_DIAMONDS            "Diamonds"
+    IDS_CLUBS               "Clubs"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\FlopOdds.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

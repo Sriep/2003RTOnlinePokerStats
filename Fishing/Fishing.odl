@@ -1,0 +1,16 @@
+// Fishing.odl : type library source for Fishing.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (Fishing.tlb).
+
+[ uuid(A2C15214-CCDE-4545-A219-B3D8A965DB4A), version(1.0) ]
+library Fishing
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

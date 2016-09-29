@@ -1,0 +1,181 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "Fishing"=..\Fishing\Fishing.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/Fishing", SUAAAAAA
+    ..\fishing
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "GridCtrl_src"=..\GridCtrl_src\GridCtrl_src.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/GridCtrl_src", CKAAAAAA
+    ..\gridctrl_src
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "History Analyser"="..\History Analyser\History Analyser.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/History Analyser", FPAAAAAA
+    ..\history analyser
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "History Parser"="..\History Parser\History Parser.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/History Parser", MLAAAAAA
+    ..\history parser
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "HistoryAnalyserDLL"="..\History Analyser\HistoryAnalyserDLL\HistoryAnalyserDLL.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/History Analyser/HistoryAnalyserDLL", SGBAAAAA
+    ..\history analyser\historyanalyserdll
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "HistoryParser_DLL"="..\History Parser\HistoryParser_DLL\HistoryParser_DLL.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/History Parser/HistoryParser_DLL", BBBAAAAA
+    ..\history parser\historyparser_dll
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "PokerObjects"=..\PokerObjects\PokerObjects.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/PokerObjects", AIBAAAAA
+    ..\pokerobjects
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SpyConsul"=..\SpyConsul\SpyConsul.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SpyConsul", CYAAAAAA
+    ..\spyconsul
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SpyConsul_DLL"=..\SpyConsul\SpyConsul_DLL\SpyConsul_DLL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SpyConsul/SpyConsul_DLL", ONBAAAAA
+    ..\spyconsul\spyconsul_dll
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "SpyDaemon"=..\SpyDaemon\SpyDaemon.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/SpyDaemon", ZOBAAAAA
+    ..\spydaemon
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+    begin source code control
+    "$/All", ALBAAAAA
+    .
+    end source code control
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

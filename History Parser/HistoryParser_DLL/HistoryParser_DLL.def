@@ -1,0 +1,10 @@
+; HistoryParser_DLL.def : Declares the module parameters for the DLL.
+
+LIBRARY      "HistoryParser_DLL"
+DESCRIPTION  'HistoryParser_DLL Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	ParseHandHistory
+	ParseLogFile
+

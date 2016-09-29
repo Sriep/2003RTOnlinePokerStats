@@ -1,0 +1,242 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\History Parser.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\History Parser.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About History Parser"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "History Parser Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_HISTORYPARSER_DIALOG DIALOGEX 0, 0, 327, 303
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "History Parser"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Parse file",ID_PARSE,80,40,56,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,265,50,14
+    EDITTEXT        IDC_FROM_DIRECTORY,83,83,194,14,ES_AUTOHSCROLL
+    LTEXT           "File Name",IDC_STATIC,21,23,42,12
+    LTEXT           "Data directory",IDC_STATIC,21,84,51,12
+    LTEXT           "Copy to directory",IDC_STATIC,21,101,60,12
+    EDITTEXT        IDC_FILE_NAME,81,19,194,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TO_DIRECTORY,83,98,194,14,ES_AUTOHSCROLL
+    GROUPBOX        "Parse directory",IDC_STATIC,17,67,279,73
+    PUSHBUTTON      "Parse Directory",IDC_PARSE_DIRECTORY,83,118,56,14
+    GROUPBOX        "Parse single file",IDC_STATIC,17,9,280,54
+    CONTROL         "Progress1",IDC_PARSING_PROGRESS,"msctls_progress32",
+                    WS_BORDER,27,162,267,13
+    LTEXT           "",IDC_PARSING_STATUS,29,181,267,11
+    GROUPBOX        "",IDC_STATIC,17,147,289,54
+    DEFPUSHBUTTON   "Parse log file",ID_PARSE_LOG,81,236,56,14
+    LTEXT           "File Name",IDC_STATIC,22,218,42,12
+    EDITTEXT        IDC_LOG_FILE_NAME,82,215,194,14,ES_AUTOHSCROLL
+    GROUPBOX        "Parse log file",IDC_STATIC,18,205,280,54
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "History Parser MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "History Parser\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "History Parser.EXE\0"
+            VALUE "ProductName", "History Parser Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_HISTORYPARSER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 300
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About History Parser..."
+    IDS_NO_BIGBET           "No big bet found"
+    IDS_NO_SLASH            "No slash (/) found"
+    IDS_NO_DASH             "No dash (-) found."
+    IDS_NO_SMALL_BET        "No small bet found"
+    IDS_NOT_TEXAS_HOLDEM    "Not a Texus holdem game record."
+    IDS_TEXT_NOT_FOUND      "Expecting to find %s, text not foud."
+    IDS_NEXT_WORD_NOTFOUND  "Looking for next word after end of line."
+    IDS_NEXT_NUMBER_NOTFOUND "Expecting a number, %s found instead."
+    IDS_TABLE_NAME_NOT_FOUND 
+                            "Expecting Table name. Table name not found before (."
+    IDS_UNEXPECTED_TEXT     "Unexpected text found."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HAND_ALREADY_IN_DB  "Hand already in datbase\n"
+    IDS_VARAINT_NOT_SUPPORTED "The variant  %s is not supported"
+    IDS_PLAY_MONEY          "Play money hand"
+    IDS_HEADER_ERROR        "Error in header, skipping game."
+    IDS_NOTHING_GAME        "No action in this hand skipping"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\History Parser.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

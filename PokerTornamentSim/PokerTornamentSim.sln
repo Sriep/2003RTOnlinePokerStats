@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokerTornamentSim", "PokerTornamentSim\PokerTornamentSim.csproj", "{F687E5F6-0FD8-4D07-80F1-0E80944BE0AC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F687E5F6-0FD8-4D07-80F1-0E80944BE0AC}.Debug.ActiveCfg = Debug|.NET
+		{F687E5F6-0FD8-4D07-80F1-0E80944BE0AC}.Debug.Build.0 = Debug|.NET
+		{F687E5F6-0FD8-4D07-80F1-0E80944BE0AC}.Release.ActiveCfg = Release|.NET
+		{F687E5F6-0FD8-4D07-80F1-0E80944BE0AC}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

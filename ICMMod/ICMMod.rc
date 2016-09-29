@@ -1,0 +1,220 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ICMMod.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ICMMod.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ICMMOD_DIALOG DIALOGEX 0, 0, 334, 391
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ICMMod"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_STACK1,15,37,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK1_MAX,63,36,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK1_STEP,108,36,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK2,86,84,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK3,87,108,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK4,86,130,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK5,86,155,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK6,87,178,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK7,86,200,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK8,89,219,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STACK9,89,237,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PRIZE1,249,34,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PRIZE2,250,52,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PRIZE3,249,73,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PRIZE4,249,95,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PRIZE5,247,118,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PRIZE6,248,142,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PRIZE7,246,164,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PRIZE8,245,185,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PRIZE9,246,207,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Calculate",IDC_CALCULATE,16,283,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,18,306,50,14
+    PUSHBUTTON      "vrs Largest",IDC_SRV_LARGEST,85,290,54,14
+    PUSHBUTTON      "Blind Defense",IDC_BIND_DEFENSE,175,295,64,14
+    GROUPBOX        "Prizes",IDC_STATIC,238,20,64,213
+    GROUPBOX        "Stack Sizes",IDC_STATIC,72,73,83,190
+    LTEXT           "Minimum",IDC_STATIC,19,25,28,8
+    LTEXT           "Maximum",IDC_STATIC,65,25,30,8
+    LTEXT           "Step",IDC_STATIC,110,26,16,8
+    GROUPBOX        "Stack 1",IDC_STATIC,7,15,147,52
+    LTEXT           "Blinds plus Antes",IDC_STATIC,258,279,54,8
+    EDITTEXT        IDC_BLINDS_ANTES,265,296,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Steal Raises",IDC_STATIC,79,279,70,75
+    PUSHBUTTON      "vrs Smallist",IDC_SRV_SMALLIST,85,310,50,14
+    PUSHBUTTON      "vrs Average",IDC_SRV_AVERAGE,87,334,50,14
+    GROUPBOX        "Blind Defense",IDC_STATIC,170,280,77,70
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    19,364,307,14
+    GROUPBOX        "Equity",IDC_STATIC,163,19,62,244
+    LTEXT           "",IDC_EQUITY1,172,41,43,12
+    LTEXT           "",IDC_EQUITY2,172,82,43,12
+    LTEXT           "",IDC_EQUITY3,173,105,43,12
+    LTEXT           "",IDC_EQUITY4,168,130,43,12
+    LTEXT           "",IDC_EQUITY5,173,156,43,12
+    LTEXT           "",IDC_EQUITY6,171,180,43,12
+    LTEXT           "",IDC_EQUITY7,172,202,43,12
+    LTEXT           "",IDC_EQUITY8,171,222,43,12
+    LTEXT           "",IDC_EQUITY9,171,241,43,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ICMMod MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ICMMod\0"
+            VALUE "LegalCopyright", "Copyright (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ICMMod.EXE\0"
+            VALUE "ProductName", "ICMMod Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ICMMOD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 384
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ICMMod.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

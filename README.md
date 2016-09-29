@@ -10,4 +10,4 @@ Supported 18 poker sites most of which are now defunct.  It mostly used hooks to
 
 It required a lot of upkeep to support constant changes in game client software, so when the likes of poker tracker and Holdem manager started providing real-time status and HUDs I stopped development on this project. 
 
-ICMMod is a separate program that provides ICM information for final table at tournaments. 
+ICMMod is a separate program that provides ICM information for the final table at tournaments. 
